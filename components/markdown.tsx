@@ -3,7 +3,7 @@ import markdownit from "markdown-it";
 import DOMPurify from "dompurify";
 
 type Props = {
-  text: string;
+  text?: string | null; // Make it optional and allow null
 };
 
 const md = markdownit({
@@ -24,7 +24,10 @@ md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
 };
 
 const Markdown = ({ text }: Props) => {
-  const htmlcontent = md.render(text);
+  // Safely handle null, undefined, or non-string values
+  const safeText = typeof text === "string" ? text : "";
+
+  const htmlcontent = md.render(safeText);
 
   // Configure DOMPurify to allow target="_blank"
   const sanitized = DOMPurify.sanitize(htmlcontent, {
