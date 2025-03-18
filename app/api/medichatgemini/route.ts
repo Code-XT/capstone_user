@@ -60,10 +60,10 @@ export async function POST(req: Request) {
         );
       });
 
-      const retrievals = await Promise.race([
+      const retrievals = (await Promise.race([
         retrievalsPromise,
         timeoutPromise,
-      ]);
+      ])) as any;
       console.log("Vector store retrievals completed");
 
       // Append retrievals to stream data
