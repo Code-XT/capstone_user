@@ -8,8 +8,7 @@ export const maxDuration = 60;
 
 // Initialize Pinecone client
 const pinecone = new Pinecone({
-  apiKey:
-    "pcsk_6shQ1t_FSL5GpDHVC2NhVUsb3YFcmPQ6moN5cgWPDqk6LmLggGeVqMFJL7kBAiAUZ8YHY7",
+  apiKey: process.env.PINECONE_API_KEY!,
 });
 
 // Initialize Google Generative AI client
