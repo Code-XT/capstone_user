@@ -2,7 +2,7 @@
 
 JurySight is an AI-powered legal assistant that helps users get answers to their legal queries in a way that matches their level of legal expertise. Whether you're a layman seeking straightforward guidance or a legal professional looking for detailed analysis, JurySight adapts its responses to your needs.
 
-![JurySight Banner](![image](https://github.com/user-attachments/assets/1ecf452f-dea1-4248-b7ca-24b5e47e4a2a))
+![JurySight Banner](https://github.com/user-attachments/assets/1ecf452f-dea1-4248-b7ca-24b5e47e4a2a)
 
 ## 🔗 Live Demo
 
