@@ -42,7 +42,7 @@ const Home = () => {
             <span className="flex flex-row items-center gap-2">
               <FileCheck2 className="text-[#D90013]" />
               <span className="bg-gradient-to-r from-[#D90013] to-red-500 bg-clip-text text-transparent">
-                JurySight
+                JuriSight
               </span>
             </span>
           </h1>

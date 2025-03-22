@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 const source_code_pro = Source_Code_Pro({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "JurySight",
+  title: "JuriSight",
   description: "The law-school dropout with a solid advice",
 };
 
