@@ -1,12 +1,12 @@
-# JurySight
+# JuriSight
 
-JurySight is an AI-powered legal assistant that helps users get answers to their legal queries in a way that matches their level of legal expertise. Whether you're a layman seeking straightforward guidance or a legal professional looking for detailed analysis, JurySight adapts its responses to your needs.
+JuriSight is an AI-powered legal assistant that helps users get answers to their legal queries in a way that matches their level of legal expertise. Whether you're a layman seeking straightforward guidance or a legal professional looking for detailed analysis, JurySight adapts its responses to your needs.
 
-![JurySight Banner](https://github.com/user-attachments/assets/1ecf452f-dea1-4248-b7ca-24b5e47e4a2a)
+![JuriSight Banner](https://github.com/user-attachments/assets/1ecf452f-dea1-4248-b7ca-24b5e47e4a2a)
 
 ## 🔗 Live Demo
 
-Check out the live version at [JurySight](https://jury-sight.vercel.app)
+Check out the live version at [JuriSight](https://jury-sight.vercel.app)
 
 ## ✨ Features
 
@@ -39,7 +39,7 @@ Check out the live version at [JurySight](https://jury-sight.vercel.app)
 ## 📁 Project Structure
 
 ```
-jurysight/
+jurisight/
 ├── .next/                  # Next.js build output
 ├── app/                    # Next.js application routes and pages
 ├── components/             # React components
