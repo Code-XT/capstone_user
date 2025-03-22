@@ -19,7 +19,8 @@ const Home = () => {
     toast({
       title: "Case Information Updated",
       description: "Your case details have been successfully applied.",
-      className: "bg-green-50 border-green-200 dark:bg-green-900/10",
+      className:
+        "bg-green-50/90 border-green-200 dark:bg-green-900/90 dark:border-green-800",
     });
     setIsMobileMenuOpen(false);
   };
