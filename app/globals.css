@@ -74,3 +74,161 @@
     @apply bg-background text-foreground;
   }
 }
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  color: #0c4a6e; /* sky-900 for light mode */
+}
+
+.dark .markdown-content h1,
+.dark .markdown-content h2,
+.dark .markdown-content h3,
+.dark .markdown-content h4,
+.dark .markdown-content h5,
+.dark .markdown-content h6 {
+  color: #7dd3fc; /* sky-300 for dark mode */
+}
+
+.markdown-content p {
+  margin-bottom: 1rem !important;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  padding-left: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5rem !important;
+}
+
+.markdown-content strong {
+  font-weight: 600 !important;
+}
+
+/* Add styling for blockquotes to make key legal principles stand out */
+.markdown-content blockquote {
+  border-left: 3px solid #0284c7 !important; /* sky-600 */
+  padding-left: 1rem !important;
+  margin-left: 0 !important;
+  background-color: rgba(
+    186,
+    230,
+    253,
+    0.2
+  ) !important; /* sky-100 at 20% opacity */
+  padding: 0.75rem 1rem !important;
+  border-radius: 0.375rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.dark .markdown-content blockquote {
+  border-left: 3px solid #0ea5e9 !important; /* sky-500 */
+  background-color: rgba(
+    7,
+    89,
+    133,
+    0.2
+  ) !important; /* sky-900 at 20% opacity */
+}
+
+/* Style code blocks for legal citations or references */
+.markdown-content code {
+  background-color: rgba(
+    226,
+    232,
+    240,
+    0.5
+  ) !important; /* slate-200 at 50% opacity */
+  padding: 0.2rem 0.4rem !important;
+  border-radius: 0.25rem !important;
+  font-size: 0.875rem !important;
+}
+
+.dark .markdown-content code {
+  background-color: rgba(
+    30,
+    41,
+    59,
+    0.5
+  ) !important; /* slate-800 at 50% opacity */
+}
+
+/* Add this to your global CSS file */
+
+/* Modern scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; /* slate-300 */
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; /* slate-400 */
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569; /* slate-600 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b; /* slate-500 */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.dark * {
+  scrollbar-color: #475569 transparent;
+}
+
+/* Custom scrollbar for specific containers */
+.scrollbar-chat {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.scrollbar-chat::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-chat::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 6px;
+}
+
+.dark .scrollbar-chat {
+  scrollbar-color: #475569 transparent;
+}
+
+.dark .scrollbar-chat::-webkit-scrollbar-thumb {
+  background-color: #475569;
+}
+
+/* Add smooth scrolling to the entire page */
+html {
+  scroll-behavior: smooth;
+}
